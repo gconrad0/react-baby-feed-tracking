@@ -1,0 +1,28 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import * as ROUTES from '../../constants/routes';
+
+const Navigation = () => (
+    <div>
+        <ul className='navigation flex justify-around p-2 bg-gray-400'>
+            <li>
+                <Link className='p-4 hover:bg-blue-100' to={ROUTES.SIGN_IN}>Sign In</Link>
+            </li>
+            <li>
+                <Link className='p-4 hover:bg-blue-100' to={ROUTES.LANDING}>Landing</Link>
+            </li>
+            <li>
+                <Link className='p-4 hover:bg-blue-100' to={ROUTES.HOME}>Home</Link>
+            </li>
+            <li>
+                <Link className='p-4 hover:bg-blue-100' to={ROUTES.ACCOUNT}>Account</Link>
+            </li>
+            <li>
+                <Link className='p-4 hover:bg-blue-100' to={ROUTES.ADMIN}>Admin</Link>
+            </li>
+        </ul>
+    </div>
+);
+
+export default Navigation;
