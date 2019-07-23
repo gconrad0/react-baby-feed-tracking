@@ -1,10 +1,7 @@
 import React from 'react'
 import firebase from 'firebase'
 
-
 class User extends React.Component {
-
-
     constructor() {
         super();
         this.state = {
@@ -56,7 +53,6 @@ class User extends React.Component {
                     placeholder="Full name"
                     onChange={this.updateInput}
                     value={this.state.fullname}
-
                 />
                 <input
                     type="email"
